@@ -15,7 +15,7 @@ public class Main {
         } else if (a == 3) {
             System.out.println("Paul");
         } else {
-            System.out.println("vacancy");
+            System.out.println("Vacancy");
         }
     }
 }
