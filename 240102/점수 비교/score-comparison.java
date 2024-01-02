@@ -6,14 +6,14 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int d = sc.nextInt();
+        int amath = sc.nextInt();
+        int aeng = sc.nextInt();
+        int bmath = sc.nextInt();
+        int beng = sc.nextInt();
 
-        if (a > c && b > d) {
+        if (amath > bmath && aeng > beng) {
             System.out.println("1");
-        } else if (a <= c && b <= d) {
+        } else if (amath <= bmath && aeng <= beng) {
             System.out.println("0");
         } 
     }
