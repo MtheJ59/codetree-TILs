@@ -16,7 +16,7 @@ public class Main {
         }
         if (a > b) {
             System.out.println("1");
-        } else if (a < b) {
+        } else if (a <= b) {
             System.out.println("0");
         }
         if (b >= a) {
@@ -26,7 +26,7 @@ public class Main {
         }
         if (b > a) {
             System.out.println("1");
-        } else if (a > b) {
+        } else if (a >= b) {
             System.out.println("0");
         }
         if (a == b) {
