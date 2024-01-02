@@ -14,7 +14,7 @@ public class Main {
             System.out.print("1 ");
         } else if (a > b && a >= c || b < c) {
             System.out.print("1 ");
-        } else {
+        } else if (a == b && a == c && b == c) {
             System.out.print("0 ");
         }
         if (a == b && a == c && b == c) {
