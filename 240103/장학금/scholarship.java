@@ -8,15 +8,20 @@ public class Main {
 
         int scoreA = sc.nextInt();
         int scoreB = sc.nextInt();
+        int pass;
 
         if (scoreA >= 90) {
-            if (scoreB >= 95) {
-                System.out.println("100000");
-            } else if (scoreB >= 90) {
-                System.out.println("50000");
-            } return;
-            } else {
-                System.out.println("0");
+         pass = 1;
+        } else {
+            pass = 0;
         }
+        if (pass == 1 && pass >= 95) {
+            System.out.println("100000");
+        } else if (pass == 1 && pass >= 90) {
+            System.out.println("50000");
+        } else {
+            System.out.println("0");
+        }
+        
     }
 }
