@@ -14,7 +14,7 @@ public class Main {
                 System.out.println("100000");
             } else if (scoreB >= 90) {
                 System.out.println("50000");
-            }
+            } return;
             } else {
                 System.out.println("0");
         }
