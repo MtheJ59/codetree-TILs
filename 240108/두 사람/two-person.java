@@ -13,13 +13,13 @@ public class Main {
     
 
        if (ageA >= 19 && genA.equals("M") || ageB >= 19 && genB.equals("M")) {
-        System.out.println("1");
+        System.out.print("1");
        } else if (ageA >= 19 && genA.equals("W") || ageB >= 19 && genB.equals("M")){
-            System.out.println("1");
+            System.out.print("1");
         } else if (ageA >= 19 && genA.equals("M") || ageB >= 19 && genB.equals("W")){
-            System.out.println("1");
+            System.out.print("1");
         } else {
-            System.out.println("0");
+            System.out.print("0");
         }
 
 }
