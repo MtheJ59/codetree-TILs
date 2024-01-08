@@ -22,8 +22,7 @@ public class Main {
             System.out.print("1");
         } else if ((ageA < 19 && genA.equals("W")) || (ageB >= 19 && genB.equals("M"))){
             System.out.print("1");
-        }
-        else {
+        } else {
             System.out.print("0");
         }
 
