@@ -12,22 +12,10 @@ public class Main {
 
     
 
-       if ((ageA >= 19 && genA.equals("M")) || (ageB >= 19 && genB.equals("M"))) {
-        System.out.print("1");
-       } else if ((ageA >= 19 && genA.equals("W")) || (ageB >= 19 && genB.equals("M"))){
-            System.out.print("1");
-        } else if ((ageA >= 19 && genA.equals("M")) || (ageB >= 19 && genB.equals("W"))){
-            System.out.print("1");
-        } else if ((ageA >= 19 && genA.equals("M")) || (ageB < 19 && genB.equals("W"))){
-            System.out.print("1");
-        } else if ((ageA < 19 && genA.equals("W")) || (ageB >= 19 && genB.equals("M"))){
-            System.out.print("1");
-        } else if ((ageA < 19 && genA.equals("M")) || (ageB >= 19 && genB.equals("M"))){
-            System.out.print("1");
-        } else if ((ageA >= 19 && genA.equals("M")) || (ageB < 19 && genB.equals("M"))){
-            System.out.print("1");
+        if (ageA >= 19 && genA.equals("M") || ageB >= 19 && genB.equals("M")) {
+            System.out.println("1");
         } else {
-            System.out.print("0");
+            System.out.println("0");
         }
 
 }
