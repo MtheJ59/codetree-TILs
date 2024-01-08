@@ -6,28 +6,19 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int ageA = sc.nextInt();
-        String genA = sc.nextLine();
+        String genA = sc.next();
         int ageB = sc.nextInt();
-        String genB = sc.nextLine();
+        String genB = sc.next();
 
     
 
-       if (ageA >= 19 && genA == "M" || ageB >= 19 && genB == "M") {
+       if (ageA >= 19 && genA.equals("M") || ageB >= 19 && genB.equals("M")) {
+        System.out.println("1");
+       } else if (ageA >= 19 && genA.equals("W") || ageB >= 19 && genB.equals("M")){
             System.out.println("1");
-        } else if (ageA < 19 && genA != "M" || ageB >= 19 && genB == "M") {
+        } else if (ageA >= 19 && genA.equals("M") || ageB >= 19 && genB.equals("W")){
             System.out.println("1");
-        } else if (ageA >= 19 && genA == "M" || ageB <19 && genB != "M") {
-            System.out.println("1");
-        } else if (ageA >= 19 && genA != "M" || ageB >= 19 && genB == "M") {
-            System.out.println("1");
-        } else if ( ageA >= 19 && genA == "M" ||ageB >= 19 && genB != "M") {
-            System.out.println("1");
-        } else if (ageA < 19 && genA == "M" || ageB >= 19 && genB == "M") {
-            System.out.println("1");
-        } else if (ageA >= 19 && genA == "M" || ageB <19 && genB == "M") {
-            System.out.println("1");
-        }
-        else {
+        } else {
             System.out.println("0");
         }
 
