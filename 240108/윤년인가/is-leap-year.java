@@ -8,15 +8,13 @@ public class Main {
 
         int y = sc.nextInt();
 
-        if (y % 4 == 0) {
-            System.out.println("true");
-            if (y % 100 == 0) {
-                System.out.println("false");
-            } else if (y % 400 == 0) {
+       
+        if (y % 4 == 0 || y % 400 == 0) {
                 System.out.println("true");
-            }
-        } else {
+            } else if (y % 4 == 0 || y % 100 == 0) {
+                System.out.println("false");
+            } else {
             System.out.println("false");
         }
     }
-}
+    }
