@@ -18,6 +18,8 @@ public class Main {
                 System.out.println("E");
             } else if ((m2 >= 37 && m3 >= 37) || (m2 >= 37 && m1 >= 37)) {
                 System.out.println("E");
+            } else {
+                System.out.println("N");
             }
         }  else {
                 System.out.println("N");
