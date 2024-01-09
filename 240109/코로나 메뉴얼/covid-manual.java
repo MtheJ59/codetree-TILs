@@ -13,7 +13,7 @@ public class Main {
         String c3 = sc.next();
         int m3 = sc.nextInt();
         
-        if ((c1.equals("Y") || c2.equals("Y")) && (c1.equals("Y") || c3.equals("Y"))) {
+        if ((c1.equals("Y") && c2.equals("Y")) || (c1.equals("Y") && c3.equals("Y"))) {
             if (m1 >= 37 && m2 >= 37) {
                 System.out.println("E");
             } else if (m1 >= 37 && m3 >= 37) {
