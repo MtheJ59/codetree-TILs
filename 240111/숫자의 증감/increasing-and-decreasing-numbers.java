@@ -14,7 +14,7 @@ public class Main {
                 System.out.print(i + " ");
             }
         } else  {
-            for (int i = 1; i <= n; i--) {
+            for (int i = 1; n <= i; i--) {
                 System.out.print(i + " ");
             }
         }
