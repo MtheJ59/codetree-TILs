@@ -9,7 +9,7 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for (int i = a; i <= b; i++) {
+        for (int i = a; i < b; i++) {
             i = a;
             if (a % 2 == 1) {
                 System.out.print(a + " ");
