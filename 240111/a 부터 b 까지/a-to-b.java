@@ -9,15 +9,15 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        for (int i = a; i < b; i++) {
-            i = a;
-            if (a % 2 == 1) {
-                System.out.print(a + " ");
-                a *= 2;
-            } else if (a % 2 == 0) {
-                System.out.print(a + " ");
-                a += 3;
+        int i = a;
+        while (i <= b) {
+            System.out.print(i + " ");
+            if (i % 2 == 1) {
+                i *= 2;
+            } else {
+                i += 3;
             }
         }
+        
     }
 }
