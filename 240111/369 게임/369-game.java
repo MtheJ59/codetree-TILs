@@ -11,9 +11,11 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0) {
                 System.out.print(0 + " ");
-            } else if (i % 6 == 0) {
+            } else if (i / 10 == 3) {
                 System.out.print(0 + " ");
-            } else if (i % 9 == 0) {
+            } else if (i / 10 == 6) {
+                System.out.print(0 + " ");
+            }  else if (i / 10 == 9) {
                 System.out.print(0 + " ");
             } else {
                 System.out.print(i + " ");
