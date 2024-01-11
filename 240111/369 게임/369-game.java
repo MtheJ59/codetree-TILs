@@ -9,13 +9,9 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            if (i % 3 == 0) {
+            if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9) {
                 System.out.print(0 + " ");
-            } else if (i % 10 == 3) {
-                System.out.print(0 + " ");
-            } else if (i % 10 == 6) {
-                System.out.print(0 + " ");
-            }  else if (i % 10 == 9) {
+            } else if (i / 10 == 3 || i / 10 == 6 || i / 10 == 9) {
                 System.out.print(0 + " ");
             } else {
                 System.out.print(i + " ");
