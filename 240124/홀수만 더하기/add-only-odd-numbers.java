@@ -11,9 +11,12 @@ public class Main {
 
         for (int i = 1; i < n; i++) {
             int a = sc.nextInt();
-            if (a % 2 != 0 && a % 3 == 0) {
-                sumVal += a;
+            if (a % 2 != 0) {
+                if (a % 3 == 0) {
+                    sumVal += a;
+                }
             }
+            
         }
 
         System.out.print(sumVal);
