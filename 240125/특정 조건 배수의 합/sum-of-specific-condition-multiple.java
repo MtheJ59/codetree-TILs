@@ -16,7 +16,7 @@ public class Main {
         if (i % 5 == 0) {
             count1 += i;
         }
-        for (int j = b; a >= j; j--) {
+        for (int j = a; j >= b; j--) {
             if (i % 5 == 0) {
                 count2 += j;
             }
