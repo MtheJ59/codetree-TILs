@@ -13,6 +13,12 @@ public class Main {
         for (int i = a; i <= b; i++) {
             if (i % 5 == 0) {
                 count += i;
+            } else if (a < b) {
+                for (int j = b; j <= a; j++) {
+                    if (j % 5 == 0) {
+                        count += j;
+                    }
+                }
             }
         }
         System.out.print(count);
