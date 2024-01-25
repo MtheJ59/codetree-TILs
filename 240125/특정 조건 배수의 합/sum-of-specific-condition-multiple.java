@@ -8,19 +8,21 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int count = 0;
-
-        for (int i = a; i <= b; i++) {
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+       
+       for (int i = a; i <= b; i++) {
+        if (i % 5 == 0) {
+            count1 += i;
+        }
+        for (int j = b; a >= j; j--) {
             if (i % 5 == 0) {
-                count += i;
-            } else if (a < b) {
-                for (int j = b; j <= a; j++) {
-                    if (j % 5 == 0) {
-                        count += j;
-                    }
-                }
+                count2 += j;
             }
         }
-        System.out.print(count);
+       count3 = count1 + count2;
+       }
+       System.out.print(count3);
     }
 }
