@@ -13,7 +13,8 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             d /= i;
             prod++;
-            if (d <= 1) {
+            float e = d;
+            if (e <= 1) {
                 System.out.print(prod);
                 break;
             } else {
