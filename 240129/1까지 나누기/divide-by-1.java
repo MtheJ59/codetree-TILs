@@ -16,6 +16,8 @@ public class Main {
             if (d <= 1) {
                 System.out.print(prod);
                 break;
+            } else {
+                continue;
             }
         }
     }
