@@ -16,7 +16,8 @@ public class Main {
                 x++;
                 n = n / 2;
             }
-            System.out.print(x);
+           
         }
+         System.out.print(x);
     }
 }
