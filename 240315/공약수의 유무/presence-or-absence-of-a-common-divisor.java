@@ -8,19 +8,29 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-        boolean bl = false;
-        
 
-        for (int i = a; i <= (a*b); i++) {
+        int[] hap = new int[1920];
+        int index = 0;
+
+        for (int i = 1; i <= 1920; i++) {
             if (1920 % i == 0 && 2880 % i == 0) {
-                bl = true;
+                hap[index] = i;
+                index++;
             }
         }
 
-        if (bl == true) {
-            System.out.print(1);
+        boolean bl = false;
+        for (int j = 0; j < index; j++) {
+            if (hap[j] >= a && hap[j] <= b) {
+                bl = true;
+                break;
+            }
+        }
+
+        if (bl) {
+            System.out.println(1);
         } else {
-            System.out.print(0);
+            System.out.println(0);
         }
     }
 }
