@@ -8,21 +8,16 @@ public class Main {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-        boolean ab = false;
-        boolean bb = false;
+        boolean bl = false;
+        
 
-        for (int i = a; i <= 1920; i++) {
-            if (1920 % i == 0) {
-                ab = true;
-            }
-        }
-        for (int j = b; j <= 2880; j++) {
-            if (2880 % j == 0) {
-                bb = true;
+        for (int i = 1; i <= (1920*2880); i++) {
+            if (1920 % i == 0 && 2880 % i == 0) {
+                bl = true;
             }
         }
 
-        if (ab == true && bb == true) {
+        if (bl == true) {
             System.out.print(1);
         } else {
             System.out.print(0);
