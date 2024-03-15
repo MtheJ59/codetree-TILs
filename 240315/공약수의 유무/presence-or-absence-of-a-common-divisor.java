@@ -11,13 +11,13 @@ public class Main {
         boolean ab = false;
         boolean bb = false;
 
-        for (int i = 1; i <= a; i++) {
-            if (a % i == 0) {
+        for (int i = a; i <= 1920; i++) {
+            if (1920 % i == 0) {
                 ab = true;
             }
         }
-        for (int j = 1; j <= b; j++) {
-            if (b % j == 0) {
+        for (int j = b; j <= 2880; j++) {
+            if (2880 % j == 0) {
                 bb = true;
             }
         }
