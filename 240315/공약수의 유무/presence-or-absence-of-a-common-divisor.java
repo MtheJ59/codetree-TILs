@@ -11,7 +11,7 @@ public class Main {
         boolean bl = false;
         
 
-        for (int i = 1; i <= (1920*2880); i++) {
+        for (int i = a; i <= (a*b); i++) {
             if (1920 % i == 0 && 2880 % i == 0) {
                 bl = true;
             }
