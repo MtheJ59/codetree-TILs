@@ -7,13 +7,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+        boolean b = false;
 
-        if (n == 2) {
-            System.out.print("N");
-        } else if (n % 2 == 0) {
-            System.out.print("C");
-        } else {
-            System.out.print("N");
+        for (int i = 2; i <= n; i++) {
+            if (n % i == 0) {
+                b = true;
+            }
         }
+            if (b == true) {
+                System.out.print("C");
+            } else {
+                System.out.print("N");
+            }
     }
 }
