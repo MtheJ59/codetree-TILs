@@ -9,12 +9,10 @@ public class Main {
         int n = sc.nextInt();
         boolean b = false;
 
-        if (n <= 0) {
-            
-        }
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i < n; i++) { // n 자신을 제외한 수로 나눈다.
             if (n % i == 0) {
                 b = true;
+                break; // 합성수로 판별되어 더 이상 검사할 필요가 없으므로 루프를 종료.
             }
         }
             if (b == true) {
